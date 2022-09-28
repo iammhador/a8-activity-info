@@ -17,7 +17,7 @@ const Activities = () => {
           <Activity key={activity.id} activity={activity}></Activity>
         ))}
       </div>
-      <div className="activity-info py-5 my-5 bg-neutral rounded-lg">
+      <div className="activity-info py-5 my-5 h-5/6  bg-neutral rounded-lg">
         <Info />
       </div>
     </div>

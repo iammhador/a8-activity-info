@@ -80,8 +80,8 @@ const Info = () => {
           </p>
         </div>
       </div>
-      <div className="grid justify-center">
-        <button className="bg-info px-5 py-2 rounded text-base font-semibold text-secondary hover:bg-cyan-400">
+      <div className="grid justify-center ">
+        <button className="bg-info px-5 py-2 rounded text-base font-semibold text-secondary hover:bg-cyan-400 my-5">
           Activity Complete
         </button>
       </div>

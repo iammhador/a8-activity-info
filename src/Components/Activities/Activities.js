@@ -15,7 +15,10 @@ const Activities = () => {
 
   return (
     <div className="activity-card">
-      <div className="product-container lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 lg:gap-5 md:gap-5 sm:gap-5 mx-5 my-5 ">
+      <div
+        data-aos="flip-left"
+        className="product-container lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 lg:gap-5 md:gap-5 sm:gap-5 mx-5 my-5 "
+      >
         {activities.map((activity) => (
           <Activity
             key={activity.id}
@@ -25,7 +28,7 @@ const Activities = () => {
           ></Activity>
         ))}
       </div>
-      <div className="activity-info my-5 rounded-lg">
+      <div className="activity-info my-5 rounded-lg ">
         <Info timer={timer} breaks={breaks} setBreaks={setBreaks} />
       </div>
     </div>

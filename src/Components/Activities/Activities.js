@@ -5,6 +5,7 @@ import "./Activities.css";
 
 const Activities = () => {
   const [activities, setActivities] = useState([]);
+  const [breaks, setBreaks] = useState();
   const [timer, setTimer] = useState(0);
   useEffect(() => {
     fetch("activity.json")
@@ -24,8 +25,8 @@ const Activities = () => {
           ></Activity>
         ))}
       </div>
-      <div className="activity-info py-5 my-5 h-5/6  bg-neutral rounded-lg">
-        <Info timer={timer} />
+      <div className="activity-info my-5 rounded-lg">
+        <Info timer={timer} breaks={breaks} setBreaks={setBreaks} />
       </div>
     </div>
   );

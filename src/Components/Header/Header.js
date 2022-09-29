@@ -17,7 +17,7 @@ const Header = () => {
           <ul className="menu menu-horizontal p-0">
             <li>
               <a
-                href="blog.html"
+                href="#blog"
                 className="text-primary hover:bg-info hover:text-secondary "
               >
                 Blog

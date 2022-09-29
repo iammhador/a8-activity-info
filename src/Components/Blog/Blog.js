@@ -2,7 +2,7 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="container my-3">
+    <div id="blog" className="container my-5">
       <h1 className="grid place-content-center text-3xl font-bold ">
         Blog Section
       </h1>

@@ -1,6 +1,11 @@
 import React from "react";
 import { MapPinIcon } from "@heroicons/react/24/solid";
+import Swal from "sweetalert2";
+
 const Info = () => {
+  const toast = () => {
+    Swal.fire("Good job!", "You Activity Has Been Completed!", "success");
+  };
   return (
     <div className="px-5 py-5">
       <div className="flex flex-cols-2 items-center	">
@@ -46,20 +51,20 @@ const Info = () => {
       <div className="my-5 py-5">
         <h2 className=" font-bold text-2xl text-secondary">Add A Break :</h2>
         <div className="bg-info flex justify-between	py-5 px-2 rounded my-3">
-          <div className="bg-secondary text-neutral font-semibold p-2 mr-1 rounded-full ">
-            <p>10m</p>
+          <div className="bg-secondary text-neutral font-semibold p-2 mr-1 hover:bg-cyan-500 hover:text-secondary rounded-full ">
+            <button>10m</button>
           </div>
-          <div className="bg-secondary text-neutral font-semibold p-2 mr-1 rounded-full">
-            <p>20m</p>
+          <div className="bg-secondary text-neutral font-semibold p-2 mr-1 rounded-full hover:bg-cyan-500 hover:text-secondary">
+            <button>20m</button>
           </div>
-          <div className="bg-secondary text-neutral font-semibold p-2 mr-1 rounded-full ">
-            <p>30m</p>
+          <div className="bg-secondary text-neutral font-semibold p-2 mr-1 rounded-full hover:bg-cyan-500 hover:text-secondary">
+            <button>30m</button>
           </div>
-          <div className="bg-secondary text-neutral font-semibold p-2 mr-1 rounded-full ">
-            <p>45m</p>
+          <div className="bg-secondary text-neutral font-semibold p-2 mr-1 rounded-full hover:bg-cyan-500 hover:text-secondary">
+            <button>45m</button>
           </div>
-          <div className="bg-secondary text-neutral font-semibold p-2 mr-1 rounded-full">
-            <p>60m</p>
+          <div className="bg-secondary text-neutral font-semibold p-2 mr-1 rounded-full hover:bg-cyan-500 hover:text-secondary">
+            <button>60m</button>
           </div>
         </div>
       </div>
@@ -81,7 +86,10 @@ const Info = () => {
         </div>
       </div>
       <div className="grid justify-center ">
-        <button className="bg-info px-5 py-2 rounded text-base font-semibold text-secondary hover:bg-cyan-400 my-5">
+        <button
+          onClick={() => toast()}
+          className="bg-info px-5 py-2 rounded text-base font-semibold text-secondary hover:text-neutral hover:bg-cyan-400 my-5"
+        >
           Activity Complete
         </button>
       </div>

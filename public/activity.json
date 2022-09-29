@@ -3,42 +3,42 @@
     "id": "01",
     "title": "Reading Books",
     "description": "Reading puts your brain to work, and that's a very good thing. Those who engage their brains through activities such as reading, chess, or puzzles could be 2.5 times less likely to develop Alzheimer's disease than those who spend their downtime on less stimulating activities.",
-    "time": "60",
+    "time": 60,
     "img": "https://images.pexels.com/photos/247899/pexels-photo-247899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "id": "02",
     "title": "Play Video Games",
     "description": "Just 10 to 20 minutes of violent gaming can increase activity in the brain regions associated with arousal, anxiety, and emotional reaction, while simultaneously reducing activity in the frontal lobes associated with emotion regulation and executive control.",
-    "time": "90",
+    "time": 90,
     "img": "https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "id": "03",
     "title": "Reading Blogs",
     "description": "In book blogging, the book blogger is usually an avid book reader who wants to share their passion with like-minded people. Posts in a book blog may have different purposes, such as to feature book reviews, book critiques, or book recommendations. Book blogs may be general or focused on a specific niche.",
-    "time": "30",
+    "time": 30,
     "img": "https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "id": "04",
     "title": "Learn Coding",
     "description": "Coding is a basic literacy in the digital age, and kids need to understand and work with and understand the technology around them. Having children learn coding at a young age prepares them for the future. Coding helps children with communication, creativity, math, writing, and confidence.",
-    "time": "220",
+    "time": 220,
     "img": "https://images.pexels.com/photos/7172094/pexels-photo-7172094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "id": "05",
     "title": "Entertainment",
     "description": "When freely chosen, entertainment can produce desired states such as relaxation or arousal and can induce the range of human emotions that enrich daily life. The emotional and social satisfactions provided by entertainment are supplemented by their impact on executive functioning and health.",
-    "time": "70",
+    "time": 70,
     "img": "https://images.pexels.com/photos/265685/pexels-photo-265685.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "id": "06",
     "title": "Social Media Scroll",
     "description": "Social media are interactive technologies that facilitate the creation and sharing of information, ideas, interests, and other forms of expression through virtual communities and networks.",
-    "time": "150",
+    "time": 150,
     "img": "https://images.pexels.com/photos/2818118/pexels-photo-2818118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ]

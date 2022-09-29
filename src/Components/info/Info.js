@@ -2,7 +2,12 @@ import React from "react";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import Swal from "sweetalert2";
 
-const Info = () => {
+const Info = ({ timer }) => {
+  console.log(timer);
+  // let totalMin = 0;
+  // for (mins of timer) {
+  //   totalMin = totalMin + mins.time;
+  // }
   const toast = () => {
     Swal.fire("Good job!", "You Activity Has Been Completed!", "success");
   };
@@ -75,7 +80,7 @@ const Info = () => {
         <div className="bg-info text-secondary flex justify-between	py-3 px-3 rounded my-3">
           <h3 className="text-lg font-medium">Activity Time</h3>
           <p>
-            <span>200</span> Minutes
+            <span>{timer}</span> Minutes
           </p>
         </div>
         <div className="bg-info text-secondary flex justify-between	py-3 px-3 rounded my-3">

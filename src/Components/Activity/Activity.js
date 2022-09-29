@@ -1,8 +1,11 @@
 import React from "react";
 
-const Activity = ({ activity }) => {
-  console.log(activity);
+const Activity = ({ activity, setTimer, timer }) => {
   const { description, img, title, time } = activity;
+
+  const handleChange = (t) => {
+    setTimer(t + timer);
+  };
 
   return (
     <div className="card w-full bg-base-100 shadow-xl image-full mb-5">
@@ -17,7 +20,12 @@ const Activity = ({ activity }) => {
           <span className="text-primary">Min</span>
         </h5>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Add To Cart</button>
+          <button
+            onClick={() => handleChange(time)}
+            className="btn btn-primary"
+          >
+            Add To Cart
+          </button>
         </div>
       </div>
     </div>

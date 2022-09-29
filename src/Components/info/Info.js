@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import Swal from "sweetalert2";
 
@@ -7,8 +7,15 @@ const Info = ({ timer, setBreaks, breaks }) => {
     Swal.fire("Good job!", "You Activity Has Been Completed!", "success");
   };
   const breakTimeValue = (e) => {
+    localStorage.setItem("Time", e);
     setBreaks(e);
   };
+
+  useEffect(() => {
+    const getBreakFromDB = localStorage.getItem("Time");
+    setBreaks(getBreakFromDB);
+  });
+
   return (
     <div className="px-5 py-5 bg-neutral rounded-xl">
       <div className="flex flex-cols-2 items-center	">
